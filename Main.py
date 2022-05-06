@@ -10,21 +10,21 @@ while jogador == False: #Faz o loop
     jogador = input("Pedra, Papel, ou Tesoura? : ") #Pergunta ao jogador oque ele quer.
     if jogador == robo: #Se a jogada for igual
         print("Empate!") #Fica empate!
-    elif jogador == "Pedra": #Se o jogador disser pedra
-        if robo == "Papel": #Se o robo disser papel
-            print("Perdes-te", robo, "embrulha", jogador) #O jogador perde
+    elif jogador == "Papel": #Se o jogador disser Papel
+        if robo == "Pedra": #Se o robo disser Pedra
+            print("Ganhas-te!", jogador, "ganha a", robo) #O jogador ganha
         else: 
-            print("Ganhas-te", jogador, "embrulha", robo) #O jogador ganha
-    elif jogador == "Tesoura": #Se o jogador disser tesoura
-        if robo == "Pedra": #Se o robo disser pedra
-            print("Perdes-te", robo, "destruiu", jogador) #O jogador perde
+            print("Perdes-te!", jogador, "perde para", robo) #O jogador perde
+    elif jogador == "Pedra": #Se o jogador disser Pedra
+        if robo == "Tesoura": #Se o robo disser Tesoura
+            print("Ganhas-te!", jogador, "ganha a", robo) #O jogador ganha
         else:
-            print("Ganhas-te", jogador, "destruiu", robo) #O jogador ganha
-    elif jogador == "Papel":  #Se o jogador disser papel
-        if robo == "Tesoura": #Se robo disser tesoura
-            print("Perdes-te", robo, "cortou", jogador) #O jogador perde
+            print("Perdes-te!", jogador, "perde para", robo) #O jogador perde
+    elif jogador == "Tesoura":  #Se o jogador disser Tesoura
+        if robo == "Papel": #Se robo disser Papel
+            print("Ganhas-te!", jogador, "ganha a", robo) #O jogador ganha
         else:
-            print("Ganhas-te", jogador, "cortou", robo) #O jogador ganha
+            print("Perdes-te!", jogador, "perde para", robo) #O jogador perde
     else:
         print("Isso não é nenhuma das três opções, tenta denovo!") #Se ele não disser nenhuma das 3 opçoes isto aparece.
 
